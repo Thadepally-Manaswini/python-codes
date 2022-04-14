@@ -1,0 +1,36 @@
+#python code for functionality of cashless super market
+#creating a dictionary
+item_list={'coco-cola':60,'rice':80,'santoor':100,'pepsi':50,'cookies':120,'bread':30,
+	   'wheat':150,'oil':180,'shampoo':190,'eggs':200,'flour':40,'ghee':375,'salt':20,'sugar':65,'millets':140,'cereal':100,
+           'tissues':250,'ice cream':150,  'dairy milk':20,'gems':5,'snickers':40,'curd':25,'milk':40,'cheese':135,'ground nuts':155,
+	   'potatoes':30,'green chillies':10,'tomatoes':15,'green peas':165,'vinegar':199,'butter':99,'waffles':80,'onion':85,'pepper':25,
+	   'garlic':28,'oranges':75,'bananas':50,'biscuits':95,'batteries':40,'tooth paste':78,'water bottle':25, 'detergent':185,'candies':55}
+print("The items available in the store are:")
+print(item_list,"\n\n")
+total=0
+available_balance=float(input("The available balance in the card is: "))
+while True:
+    item=input("Enter the required item: ")
+    if(item in item_list):
+        quantity=int(input("Enter the required quantity: "))
+        total=total+(quantity*item_list[item])
+    else:
+        print("Sorry!!! The item is not available in the store")
+    choice=input("Do you want to buy another item(yes/no): ")
+    if(choice=='yes'):
+        continue
+    elif(choice=='no'):
+        break
+available_balance=available_balance-total
+print("The total amount is:",total)
+if(available_balance<total):
+    print("Sorry!!! You dont have sufficient balance")
+else:
+    print("The amount debited is:",total)
+    print("The remaining balance in the account is:",available_balance)
+print("Thanks for visiting the store")
+print("        VISIT AGAIN        ")
+
+
+
+
