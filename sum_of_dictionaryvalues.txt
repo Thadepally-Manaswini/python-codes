@@ -1,0 +1,18 @@
+#sum of dictionary values
+dict={} #creating an empty dictionary
+for i in range(1,11): #sum for 10 values
+    #enter the key's into dictionay
+    key=input("Enter the key for dictionary: ")
+    #enter the values for the keys
+    value=int(input("Enter the integer values: "))
+    dict.update({key:value}) #appending key value pair into dictionary
+#printing the dictionary
+print(dict)
+sum=0
+for i in dict:
+    #performing the sum of values
+    sum=sum+dict[i]
+#printing the sum of values
+print("The sum of values:",sum)
+
+

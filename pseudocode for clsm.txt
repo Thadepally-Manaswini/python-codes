@@ -1,0 +1,35 @@
+write a pseudocode for a cashless supermarket
+
+#create a dictionary with all the available items and their prices in the supermarket
+total=0
+Get the available balance by scanning the credit/debit card as input
+While True:
+	Get the required quantity of items as input
+	if item in list:
+		Get the required quantity as input from user 
+  		#calculate the total
+		total=total+(quantity*price_of_item)
+	else: 
+		print sorry!!! The item is not available in the store.
+       Get the choice of user if he wants to continue shopping by        
+       (yes/no).
+       #if the user wants to continue shopping
+       if choice==’yes’:
+		Continue
+       else:
+		#if the user is done with the shopping
+       		break
+#calculate the remaining balance in the account after billing
+available_balance=available_balance-total
+Print the total amount to be paid.
+#if the available balance is less than the total bill
+if available_balance < bill:
+	print sorry!!! You dont have sufficient balance
+#if the user have sufficient balance
+else:
+	Print the amount debited from the account
+	Print the remaining balance in the account
+	Print the statement as ‘Thanks for visiting the store’
+	Print the statement as ‘VISIT AGAIN’
+
+
