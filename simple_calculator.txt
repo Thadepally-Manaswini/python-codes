@@ -1,0 +1,46 @@
+#program for simple calculator
+print("Please select operation\n" \
+        "1. Add\n" \
+        "2. Subtract\n" \
+        "3. Multiply\n" \
+        "4. Divide\n" \
+         "5.Exponent") 
+while True:
+    choice=int(input("Enter your choice: "))
+    if((choice!=1) and (choice!=2) and (choice!=3) and (choice!=4) and (choice!=5)):
+        print("Invalid selection!! Select from (1,2,3,4,5)")
+    else:
+	#user input for first number
+        a=int(input("Enter the first number: ")) 
+	#user input for second number 
+        b=int(input("Enter the second number: ")) 
+        if(choice==1):
+	    #Addition of two numbers
+            print(a,"+",b,"=",a+b);
+        elif(choice==2):
+	    #subtraction of two numbers
+            print(a,"-",b,"=",a-b);
+        elif(choice==3):
+	    #multiplication of two numbers
+            print(a,"*",b,"=",a*b);
+        elif(choice==4):
+	    #division of two numbers
+            print(a,"/",b,"=",a/b);
+        elif(choice==5):
+	    #power of a number
+            print(a,"**",b,"=",a**b);
+    c=input("Do you want to continue(Yes/No):")
+    if(c=='No'):
+	#if user want to stop performing operations
+        break
+    else:
+        #if user want to perform more number of operations
+        continue
+    
+
+
+
+
+
+
+
