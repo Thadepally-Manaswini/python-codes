@@ -29,6 +29,7 @@ while True:
         elif(choice==5):
 	    #power of a number
             print(a,"**",b,"=",a**b);
+    #asking the user if he wanted to continue
     c=input("Do you want to continue(Yes/No):")
     if(c=='No'):
 	#if user want to stop performing operations
